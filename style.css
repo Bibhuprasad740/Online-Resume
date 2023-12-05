@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --white-color: white;
+  --background-color: rgb(47, 49, 68);
+  --dark-textcolor: rgb(2, 8, 39);
+  --dark-background-color: rgb(2, 8, 39);
+  --light-textcolor: antiquewhite;
+  --light-background-color: antiquewhite;
+  --light-hover-color: rgb(92, 92, 92);
+  --dark-hover-color: rgb(2, 8, 39);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* ==============OUTER CONTAINER================== */
+
+.portfolioContainer {
+  width: 70%;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px rgba(104, 104, 104, 0.397);
+}
+
+/* ===============HEADER=================== */
+
+header {
+  padding: 1rem;
+}
+
+.hr-dark {
+  height: 3px;
+  background-color: var(--dark-background-color);
+}
+
+.hr-light {
+  height: 1px;
+  background-color: var(--light-background-color);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  list-style: none;
+}
+
+.nav-item:hover {
+  background-color: var(--dark-hover-color);
+  color: var(--white-color);
+}
+
+/* ==============MAIN CONTENT=============== */
+
+.content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.portfolioEvent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioContent {
+  padding: 0 10px;
+}
+
+.portfolioSection {
+  padding-top: 1rem;
+}
+
+.headingText {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subHeadingText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contentText {
+  font-size: 16px;
+}
+
+/* ============TOP SECTION============== */
+
+.topSection {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--light-textcolor);
+  background-color: black;
+}
+.topSection img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.topSection .name {
+  font-size: 35px;
+  text-align: center;
+}
+
+.topSection .summary {
+  width: 80%;
+  text-align: center;
+}
+
+/* =============EDUCATION SECTION============== */
+
+.cvSection {
+  padding: 1rem 3rem 0 3rem;
+  width: 100%;
+  background-color: var(--light-background-color);
+  color: var(--dark-textcolor);
+}
+
+.link {
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: var(--dark-background-color);
+  color: var(--light-textcolor);
+}
+
+@media screen and (max-width: 1400px) {
+  .portfolioContainer {
+    width: 99%;
+  }
+}
